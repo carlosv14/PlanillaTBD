@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Planilla_TBD.Models.ParametrosListModel>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_PARAMETRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FORMULA)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_PARAMETRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FORMULA)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  ID_PARAMETRO =item.ID_PARAMETRO, TIPO = item.TIPO, NOMBRE = item.NOMBRE, FORMULA = item.FORMULA }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { ID_PARAMETRO = item.ID_PARAMETRO })
+        </td>
+    </tr>
+}
+
+</table>

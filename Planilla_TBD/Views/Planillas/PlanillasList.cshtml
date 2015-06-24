@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Planilla_TBD.Models.PlanillasListModel>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_PLANILLA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_TIPO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHA_INICIO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHA_FINAL)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_PLANILLA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_TIPO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHA_INICIO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHA_FINAL)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID_PLANILLA, ID_TIPO = item.ID_TIPO,NOMBRE=item.NOMBRE, FECHA_INICIO = item.FECHA_INICIO,FECHA_FINAL = item.FECHA_FINAL}) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new {id = item.ID_PLANILLA })
+        </td>
+    </tr>
+}
+
+</table>

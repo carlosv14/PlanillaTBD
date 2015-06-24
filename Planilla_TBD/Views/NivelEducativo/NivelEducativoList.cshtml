@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Planilla_TBD.Models.NivelEducativoListModel>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_NIVEL_EDUCATIVO)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AÑO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TITULO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_NIVEL_EDUCATIVO)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AÑO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TITULO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_NIVEL_EDUCATIVO,ID_COLABORADOR=item.ID_COLABORADOR,NOMBRE = item.NOMBRE,AÑO = item.AÑO,TITULO = item.TITULO}) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.ID_NIVEL_EDUCATIVO, ID_COLABORADOR = item.ID_COLABORADOR})
+        </td>
+    </tr>
+}
+
+</table>

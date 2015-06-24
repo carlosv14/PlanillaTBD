@@ -1,0 +1,5 @@
+C:\Users\Carlos Varela\Documents\Visual Studio 2013\Projects\Planilla_TBD\Planilla_TBD.Domain\bin\Debug\Planilla_TBD.Domain.dll
+C:\Users\Carlos Varela\Documents\Visual Studio 2013\Projects\Planilla_TBD\Planilla_TBD.Domain\bin\Debug\Planilla_TBD.Domain.pdb
+C:\Users\Carlos Varela\Documents\Visual Studio 2013\Projects\Planilla_TBD\Planilla_TBD.Domain\obj\Debug\Planilla_TBD.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Carlos Varela\Documents\Visual Studio 2013\Projects\Planilla_TBD\Planilla_TBD.Domain\obj\Debug\Planilla_TBD.Domain.dll
+C:\Users\Carlos Varela\Documents\Visual Studio 2013\Projects\Planilla_TBD\Planilla_TBD.Domain\obj\Debug\Planilla_TBD.Domain.pdb

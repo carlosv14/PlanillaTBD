@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Planilla_TBD.Models.TipoPlanillaListModel>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_TIPO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO_PAGO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_TIPO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_PAGO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { ID_TIPO = item.ID_TIPO, TIPO_PAGO = item.TIPO_PAGO, NOMBRE = item.NOMBRE }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { ID_TIPO = item.ID_TIPO })
+        </td>
+    </tr>
+}
+
+</table>

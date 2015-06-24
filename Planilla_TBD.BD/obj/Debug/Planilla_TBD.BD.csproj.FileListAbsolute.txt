@@ -1,0 +1,5 @@
+c:\users\carlos varela\documents\visual studio 2013\Projects\Planilla_TBD\Planilla_TBD.BD\bin\Debug\Planilla_TBD.BD.dll
+c:\users\carlos varela\documents\visual studio 2013\Projects\Planilla_TBD\Planilla_TBD.BD\bin\Debug\Planilla_TBD.BD.pdb
+c:\users\carlos varela\documents\visual studio 2013\Projects\Planilla_TBD\Planilla_TBD.BD\obj\Debug\Planilla_TBD.BD.csprojResolveAssemblyReference.cache
+c:\users\carlos varela\documents\visual studio 2013\Projects\Planilla_TBD\Planilla_TBD.BD\obj\Debug\Planilla_TBD.BD.dll
+c:\users\carlos varela\documents\visual studio 2013\Projects\Planilla_TBD\Planilla_TBD.BD\obj\Debug\Planilla_TBD.BD.pdb

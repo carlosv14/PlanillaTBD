@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Planilla_TBD.Models.HobbiesListModel>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_HOBBIE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HOBBIE)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_HOBBIE)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.HOBBIE)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_HOBBIE,ID_COLABORADOR =item.ID_COLABORADOR, HOBBIE = item.HOBBIE }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_HOBBIE, ID_COLABORADOR = item.ID_COLABORADOR  })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,106 @@
+﻿@model IEnumerable<Planilla_TBD.Models.ColaboradoresListModel>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_COLABORADOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_DEPARTAMENTO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_TIPO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_SUPERIOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRIMER_NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SEGUNDO_NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRIMER_APELLIDO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SEGUNDO_APELLIDO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FECHA_NACIMIENTO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SALARIO_BASE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GRADO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SEXO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CEDULA)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_COLABORADOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_DEPARTAMENTO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_TIPO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_SUPERIOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRIMER_NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SEGUNDO_NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRIMER_APELLIDO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SEGUNDO_APELLIDO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FECHA_NACIMIENTO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SALARIO_BASE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GRADO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SEXO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CEDULA)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new
+            {
+                id = item.ID_COLABORADOR, depto = item.ID_DEPARTAMENTO,
+                tipo = item.ID_TIPO, jefe = item.ID_SUPERIOR, pn = item.PRIMER_NOMBRE,
+                sn = item.SEGUNDO_NOMBRE, pa = item.PRIMER_APELLIDO, sa = item.SEGUNDO_APELLIDO,
+                fecha_nac = item.FECHA_NACIMIENTO, sal_base = item.SALARIO_BASE, grado = item.GRADO,
+                sexo = item.SEXO, cedula = item.CEDULA
+            }) |
+            @Html.ActionLink("Detail", "Detail", new { id = item.ID_COLABORADOR }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.ID_COLABORADOR })
+        </td>
+    </tr>
+}
+
+</table>
